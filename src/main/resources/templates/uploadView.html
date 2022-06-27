@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="/http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"></meta	>
+
+</head>
+<body>
+<div>
+<form action="/upload" method ="post"  enctype="multipart/form-data">
+
+<input type="file" name="files" multiple>
+<input type="submit" value="upload files"/>
+</form>
+</div>
+<div th:if="${ not#lists.isEmpty(listFiles)}">
+
+ <table>
+            <tr>
+              
+              <th>FileName</th>
+            </tr>
+            <tr th:each="file : ${listFiles}">
+            <!-- <a href="D:\Spring\spring_workspace\FileUpload_SB\uploads\html1.html" download th:text="${file}">
+            <img src="D:\Spring\spring_workspace\FileUpload_SB\uploads\html1.html" alt="W3Schools">
+            </a> -->
+               <td th:text="${file}"></td> 
+              
+            
+            
+            </tr>
+          <table>
+
+</div>
+</body>
+</html>
