@@ -57,6 +57,9 @@ public String upload(Model model,@RequestParam("files") MultipartFile[] files) {
 	modelG.addAttribute("listFiles",listFiles);
 	modelG.addAttribute("listFiles",listFiles);
 	modelG.addAttribute("listFiles",listFiles);
+	modelG.addAttribute("listFiles",listFiles);
+	modelG.addAttribute("listFiles",listFiles);
+	modelG.addAttribute("listFiles",listFiles);
 	
 	return "uploadView.html";
 	//return "";
